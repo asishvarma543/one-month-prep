@@ -1,0 +1,14 @@
+def pangrams(s):
+    # Write your code here
+    s=s.upper()
+    a=[x for x in s.split()]
+    count=0
+    str1=""
+    for k in a:
+        for j in k:
+            if(j not in str1):
+                str1+=j
+    if(len(str1)==26):
+        return 'pangram'
+    else:
+        return 'not pangram'
