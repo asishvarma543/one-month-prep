@@ -1,0 +1,11 @@
+def diagonalDifference(arr):
+    sum1=0
+    sum2=0
+    # Write your code here
+    for i in range(n):
+        for j in range(n):
+            if(i==j):
+                sum1+=arr[i][i]
+            if(i+j==n-1):
+                sum2+=arr[i][j]
+    return abs(sum1-sum2)
